@@ -1,0 +1,13 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 26px 26px;
+  color: #333333; }
+  * h1 {
+    font-size: 43pt; }
+  * h2 {
+    font-size: 32pt; }
+  * h3 {
+    font-size: 25pt;
+    font-weight: 700; }
+  * p {
+    font-size: 18pt; }
