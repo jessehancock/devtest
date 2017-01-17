@@ -1,6 +1,30 @@
 .article-container{
-  max-width: 850px;
+  max-width: 800px;
   margin: 0 auto;
-  // TODO get ride of background color before final pull request
-  background: #eee;
+
+  .heroImage {
+    max-width:100%;
+    max-height:100%;
+    object-fit: cover;
+  }
+
+  .article-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .articleThumb{
+    width: 50px;
+    height: 50px;
+  }
+  .v-wrap{
+    float: right;
+    margin: 10px 0 10px 10px;
+  }
+  .top-paragraph{
+    padding: 40px 0 0 0;
+  }
+  .paragraph{
+    max-width: 650px;
+  }
 }

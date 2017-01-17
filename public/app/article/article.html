@@ -1,15 +1,37 @@
 <div class="article-container">
-  <h2>Sub-heading</h2>
-  <h1>Heading</h1>
-  <div>
-    <img ng-src="{{data.image}}" alt="">
-    <h3>{{data.title}}</h3>
-    <p>{{data.caption}}</p>
-    <img src="./public/assets/images/articlePhoto1Thumb.jpg" alt="" ng-click=imageOne()>
-    <img src="./public/assets/images/articlePhoto2Thumb.jpg" alt="" ng-click=imageTwo()>
-  </div>
+    <h2>subtitle</h2>
+    <h1>Title of the section</h1>
+    <div>
+        <img class="heroImage" ng-src="{{data.image}}" alt="">
+        <div class="article-flex">
+            <div>
+                <h3>{{data.title}}</h3>
+                <p>{{data.caption}}</p>
+            </div>
+            <span>
+      <img class="articleThumb" src="./public/assets/images/articlePhoto1Thumb.jpg" alt="" ng-click=imageOne()>
+      <img class="articleThumb" src="./public/assets/images/articlePhoto2Thumb.jpg" alt="" ng-click=imageTwo()>
+    </span>
+        </div>
+    </div>
+    <div class="top-paragraph">
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue quam, ullamcorper in elit sit amet, dictum placerat magna. Maecenas et posuere velit. Nunc sagittis volutpat nisl sit amet dignissim.</p>
+    </div>
+    <div class="">
+        <iframe class="v-wrap" src="https://www.youtube.com/embed/NZhjRLuV_4I?list=PLWWgdnDDmbBMxknHXZDawrL8OvN5TO-dN" frameborder="0" allowfullscreen></iframe>
+        <p class="paragraph">
+            Proin ac fringilla mi. Aliquam erat volutpat. Etiam vitae ex venenatis, blandit lorem vel, tristique augue. Cras ut dapibus nisi. In tincidunt nunc nisl, ac placerat ipsum iaculis hendrerit. Quisque blandit ex nunc, vel ultricies diam dapibus non. Integer
+            commodo justo et lacus ornare congue. Nulla facilisi. Maecenas suscipit dictum ex, pretium pharetra augue varius ut.
+        </p>
+    </div>
+    <div>
+        <h2>sub heading</h2>
+    </div>
+    <div >
+        <p class="paragraph">
+            Proin ac fringilla mi. Aliquam erat volutpat. Etiam vitae ex venenatis, blandit lorem vel, tristique augue. Cras ut dapibus nisi. In tincidunt nunc nisl, ac placerat ipsum iaculis hendrerit. Quisque blandit ex nunc, vel ultricies diam dapibus non. Integer
+            commodo justo et lacus ornare congue. Nulla facilisi. Maecenas suscipit dictum ex, pretium pharetra augue varius ut.
+        </p>
 
-  <h2>h2</h2>
-  <h3>h3</h3>
-  <p>p</p>
+    </div>
 </div>
