@@ -1,0 +1,30 @@
+$pink: rgb(223,70,97);
+$blue: rgb(0,95,131);
+$green: rgb(107,165,57);
+$dark: rgb(51, 51, 51);
+$light: rgb(208, 211, 212);
+
+
+.tiles-container{
+  .tiles {
+    display: flex;
+    justify-content: space-between;
+  }
+  .discription{
+    max-width: 350px;
+  }
+  .line{
+height: 1px;
+margin: 10px 0;
+}
+.margin-bottom{
+  margin-bottom: 60px;
+}
+
+}
+@media (max-width: 800px) {
+  .tiles {
+    flex-direction: column;
+    align-items: center;
+  }
+}

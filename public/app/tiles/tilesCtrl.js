@@ -1,9 +1,10 @@
 // INITILIZE CONTROLLER
 // ============================================================
-angular.module("app").controller("tilesCtrl", function($scope) {
+angular.module("app").controller("tilesCtrl", function($scope, tilesData) {
   // VARIABLES
   // ============================================================
-  $scope.test = 'tiles test'
+  $scope.data = tilesData.data
   // FUNCTIONS
   // ============================================================
+
 });

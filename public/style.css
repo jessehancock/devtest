@@ -1,3 +1,12 @@
+#blue {
+  background-color: #005f83; }
+
+#green {
+  background-color: #6ba539; }
+
+#pink {
+  background-color: #df4661; }
+
 * {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -42,3 +51,21 @@
   .article-container .paragraph {
     max-width: 650px; }
 
+.tiles-container .tiles {
+  display: flex;
+  justify-content: space-between; }
+
+.tiles-container .discription {
+  max-width: 350px; }
+
+.tiles-container .line {
+  height: 1px;
+  margin: 10px 0; }
+
+.tiles-container .margin-bottom {
+  margin-bottom: 60px; }
+
+@media (max-width: 800px) {
+  .tiles {
+    flex-direction: column;
+    align-items: center; } }

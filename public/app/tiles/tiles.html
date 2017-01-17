@@ -1,1 +1,37 @@
-{{test}}
+<div class="tiles-container">
+  <h3>In Your Area</h3>
+  <div class="line" id="pink"></div>
+    <div class="tiles margin-bottom">
+        <div ng-repeat="local in data.locals">
+            <img ng-src="{{local.image}}" alt="">
+            <h3>{{local.title}}</h3>
+            <p class="discription">{{local.discription}}</p>
+            <br>
+            <p class="discription">{{local.blurb}}</p>
+        </div>
+    </div>
+    <h3>News</h3>
+    <div class="line" id="blue"></div>
+    <div class="tiles margin-bottom">
+        <div class="" ng-repeat="news in data.news">
+            <img ng-src="{{news.image}}" alt="">
+            <h3>{{news.title}}</h3>
+            <p class="discription">{{news.discription}}</p>
+            <br>
+            <p class="discription">{{news.blurb}}</p>
+        </div>
+    </div>
+    <h3>Inspirational</h3>
+    <div class="line" id="green"></div>
+    <div class="tiles">
+        <div class="" ng-repeat="inspiration in data.inspirations">
+            <img ng-src="{{inspiration.image}}" alt="">
+            <h3>{{inspiration.title}}</h3>
+            <p class="discription">{{inspiration.discription}}</p>
+            <br>
+            <p class="discription">{{inspiration.blurb}}</p>
+        </div>
+    </div>
+
+
+</div>

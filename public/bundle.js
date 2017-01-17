@@ -37,23 +37,75 @@ angular.module("app").controller("articleCtrl", ["$scope", "articleService", fun
 angular.module("app").service("articleService", function () {
 
   this.item1 = {
-    image: 'http://www.wall321.com/thumbnails/detail/20120404/water%20landscapes%20nature%20outdoors%20norway%20fjord%20geiranger%20fjord%201920x1200%20wallpaper_www.wallpaperto.com_76.jpg',
+    image: 'public/assets/images/articlePhoto1.jpg',
     title: 'image one',
     caption: 'caption one'
   };
 
   this.item2 = {
-    image: 'http://www.outdoors.org/articles/wp-content/uploads/2014/05/OUTDOOR-TRIPS-WITH-KIDS-BEST-FAMILY-BACKPACKING-IN-NEW-ENGLAND-AND-THE-MID-ATLANTIC1.jpg',
+    image: 'public/assets/images/articlePhoto2.jpg',
     title: 'image two',
     caption: 'caption two'
   };
 });
 // INITILIZE CONTROLLER
 // ============================================================
-angular.module("app").controller("tilesCtrl", ["$scope", function ($scope) {
+angular.module("app").controller("tilesCtrl", ["$scope", "tilesData", function ($scope, tilesData) {
   // VARIABLES
   // ============================================================
-  $scope.test = 'tiles test';
+  $scope.data = tilesData.data;
   // FUNCTIONS
+  // ============================================================
+}]);
+// INITILIZE SERVICE
+// ============================================================
+angular.module("app").service("tilesData", ["$http", function ($http) {
+  // CRUD FUNCTIONS
+  // ============================================================
+  this.data = {
+    locals: [{
+      title: 'local one',
+      discription: 'eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+      image: 'public/assets/images/photo01.jpg',
+      blurb: 'this is the local one'
+    }, {
+      title: 'local two',
+      discription: 'teu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est',
+      image: 'public/assets/images/photo02.jpg',
+      blurb: 'this is the local two'
+    }, {
+      title: 'local three',
+      discription: 'eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est sint occaecat',
+      image: 'public/assets/images/photo03.jpg',
+      blurb: 'this is the local three'
+    }],
+    news: [{
+      title: 'news one',
+      discription: 'eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est sint occaecat',
+      blurb: 'this is the news one',
+      image: 'public/assets/images/photo04.jpg' }, {
+      title: 'news two',
+      discription: 'eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est sint occaecat',
+      blurb: 'this is the news two',
+      image: 'public/assets/images/photo05.jpg' }, {
+      title: 'news three',
+      discription: 'eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est sint occaecat',
+      blurb: 'this is the local three',
+      image: 'public/assets/images/photo06.jpg' }],
+    inspirations: [{
+      title: 'inspiration one',
+      discription: 'eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est sint occaecat',
+      blurb: 'this is the inspiration one',
+      image: 'public/assets/images/photo07.jpg' }, {
+      title: 'inspiration two',
+      discription: 'eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est sint occaecat',
+      blurb: 'this is the inspiration two',
+      image: 'public/assets/images/photo08.jpg' }, {
+      title: 'inspiration three',
+      discription: 'eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est sint occaecat',
+      blurb: 'this is the inspiration three',
+      image: 'public/assets/images/photo09.jpg' }]
+  };
+  // OTHER FUNCTIONS
   // ============================================================
 }]);
