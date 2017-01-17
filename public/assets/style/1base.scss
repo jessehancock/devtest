@@ -9,13 +9,22 @@ $light: rgb(208, 211, 212);
 
 *{
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
   margin: 26px 26px;
   color: $dark;
-	h1 {font-size: 43pt;};
-	h2 {font-size: 32pt;};
+	h1 {font-size: 43pt;
+			line-height: 100%;
+			padding: 10px 0px};
+	h2 {font-size: 32pt;
+		line-height: 100%;
+			padding: 10px 0px};
 	h3 {font-size: 25pt;
+		line-height: 100%;
+			padding: 10px 0px;
       font-weight: 700};
-	p {font-size: 18pt};
+	p {font-size: 18pt;
+		 line-height: 100%;
+		 padding: 5px 0px};
 }
 
 // SPACING

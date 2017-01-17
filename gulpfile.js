@@ -20,7 +20,7 @@ gulp.task('js', function() {
   .pipe(babel()) //Uncomment if using ES6
   .pipe(concat('bundle.js'))
   .pipe(annotate())
-  //.pipe(uglify()) //Uncomment when code is production ready
+  // .pipe(uglify()) //Uncomment when code is production ready
   .pipe(gulp.dest('./public'));
 });
 gulp.task('sass', function () {

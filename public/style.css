@@ -1,13 +1,28 @@
 * {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   margin: 26px 26px;
   color: #333333; }
   * h1 {
-    font-size: 43pt; }
+    font-size: 43pt;
+    line-height: 100%;
+    padding: 10px 0px; }
   * h2 {
-    font-size: 32pt; }
+    font-size: 32pt;
+    line-height: 100%;
+    padding: 10px 0px; }
   * h3 {
     font-size: 25pt;
+    line-height: 100%;
+    padding: 10px 0px;
     font-weight: 700; }
   * p {
-    font-size: 18pt; }
+    font-size: 18pt;
+    line-height: 100%;
+    padding: 5px 0px; }
+
+.article-container {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #eee; }
+
